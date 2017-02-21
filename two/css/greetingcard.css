@@ -180,6 +180,57 @@ html,body{
     z-index: 100;
 }
 
+/*左边气球出现动画*/
+#page1 > .left_balloon_appear{
+    -webkit-animation:lba 2s linear;
+    -o-animation:lba 2s linear;
+    animation:lba 2s linear;
+}
+
+/*左边气球持续动画*/
+#page1 > .left_balloon_keep{
+    -webkit-animation:lbk 1s linear infinite;
+    -o-animation:lbk 1s linear infinite;
+    animation:lbk 1s linear infinite;
+}
+
+@keyframes lba {
+    0%{
+        bottom: -18.4375rem;
+        left: 2.4375rem;
+    }
+    25%{
+        left: 1.875rem;
+    }
+    50%{
+        left: 2.4375rem;
+    }
+    75%{
+        left:3rem;
+    }
+    100%{
+        left: 2.4375rem;
+    }
+}
+@keyframes lbk {
+    0%{
+        left: 2.4375rem;
+    }
+    25%{
+        left: 1.875rem;
+    }
+    50%{
+        left: 2.4375rem;
+    }
+    75%{
+        left:3rem;
+    }
+    100%{
+        left: 2.4375rem;
+    }
+}
+
+
 
 /*头部彩花*/
 #page1 > .top_ayaka{
@@ -324,7 +375,6 @@ html,body{
 }
 
 
-
 /*底部气球*/
 #page1 > .bottom_balloon{
     background: url("../img/bottom_balloon.png") no-repeat center center;
@@ -333,6 +383,42 @@ html,body{
     position: fixed;
     bottom: 0;
 }
+#page1 > .bottom_balloon_appear{
+    -webkit-animation:bba 2s linear;
+    -o-animation:bba 2s linear;
+    animation:bba 2s linear ;
+}
+#page1 > .bottom_balloon_keep{
+    -webkit-animation:bbk 1s linear infinite;
+    -o-animation:bbk 1s linear infinite;
+    animation:bbk 1s linear infinite;
+}
+@keyframes bba {
+    0%{
+        bottom: -25.8125rem;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes bbk {
+    0%{
+        bottom: 0rem;
+    }
+    25%{
+        bottom:-0.3125rem;
+    }
+    50%{
+        bottom: 0rem;
+    }
+    75%{
+        bottom: 0.3125rem;
+    }
+    100%{
+        bottom: 0rem;
+    }
+}
+
 
 /*happy_birthday*/
 #page1 > .happy_birthday{
@@ -342,7 +428,54 @@ html,body{
     position: fixed;
     left: 3.875rem;
     top: 24.375rem;
+    display: none;
     z-index: 2;
+}
+#page1 > .happy_birthday_appear{
+    display: block;
+    -webkit-animation:pha 0.3s linear;
+    -o-animation:pha 0.3s linear;
+    animation:pha 0.3s linear;
+}
+
+@keyframes pha{
+    0%{
+        -webkit-transform: scale(0.2,0.2);
+        -moz-transform: scale(0.2,0.2);
+        -ms-transform: scale(0.2,0.2);
+        -o-transform: scale(0.2,0.2);
+        transform: scale(0.2,0.2);
+        opacity: 0;
+    }
+    80%{
+        -webkit-transform: scale(1.2,1.2);
+        -moz-transform: scale(1.2,1.2);
+        -ms-transform: scale(1.2,1.2);
+        -o-transform: scale(1.2,1.2);
+        transform: scale(1.2,1.2);
+    }
+    85%{
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    90%{
+        -webkit-transform: scale(0.8,0.8);
+        -moz-transform: scale(0.8,0.8);
+        -ms-transform: scale(0.8,0.8);
+        -o-transform: scale(0.8,0.8);
+        transform: scale(0.8,0.8);
+    }
+    100%{
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+        opacity: 1;
+    }
 }
 
 /*cake*/
@@ -354,4 +487,49 @@ html,body{
     left: 13rem;
     top: 14.5rem;
     z-index: 1;
+    display: none;
+}
+
+#page1 > .cake_appear{
+    -webkit-animation:ca 0.5s linear;
+    -o-animation:ca 0.5s linear;
+    animation:ca 0.5s linear;
+    display: block;
+}
+@keyframes ca {
+    0%{
+        top: -40rem;
+    }
+    80%{
+        top: 12.625rem;
+        -webkit-transform: scale(0.8,0.8);
+        -moz-transform: scale(0.8,0.8);
+        -ms-transform: scale(0.8,0.8);
+        -o-transform: scale(0.8,0.8);
+        transform: scale(0.8,0.8);
+    }
+    85%{
+        top: 14.5rem;
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    90%{
+        top: 12.625rem;
+        -webkit-transform: scale(0.8,0.8);
+        -moz-transform: scale(0.8,0.8);
+        -ms-transform: scale(0.8,0.8);
+        -o-transform: scale(0.8,0.8);
+        transform: scale(0.8,0.8);
+    }
+    100%{
+        top: 14.5rem;
+        -webkit-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
 }
