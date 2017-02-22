@@ -34,7 +34,11 @@ bottom_balloon.addEventListener("animationend", function () {
    $("#bottom_balloon").removeClass('bottom_balloon_appear');
    $("#bottom_balloon").addClass('bottom_balloon_keep');
    $("#happy_birthday").addClass('happy_birthday_appear');
+   console.log('两个')
 });
+
+
+
 //happy_birthday
 happy_birthday.addEventListener("animationend", function () {
    $("#cake").addClass('cake_appear')

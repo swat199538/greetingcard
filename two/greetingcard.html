@@ -5,6 +5,7 @@
     <title></title>
     <link href="css/greetingcard.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
+    <script src="js/bind.new.animation.js"></script>
 </head>
 <body>
     <!--第一张页面开始-->
@@ -56,6 +57,15 @@
 
     </div>
     <!--第一张页面结束-->
-<script src="js/action.js"></script>
+
+<script>
+    Actions.bindNewAnimation('top_ayaka', 'top_ayaka_appear', 'bottom_ayaka_keep');
+    Actions.bindNewAnimation('bottom_ayaka', 'top_ayaka_appear', 'bottom_ayaka_keep');
+    Actions.bindNewAnimation('right_balloon', 'right_balloon_appear', 'right_balloon_keep');
+    Actions.bindNewAnimation('left_balloon', 'left_balloon_appear', 'left_balloon_keep');
+    Actions.bindNewAnimation('bottom_balloon', 'bottom_balloon_appear', 'bottom_balloon_keep');
+    Actions.bindDifferent('bottom_balloon', 'happy_birthday', 'happy_birthday_appear');
+    Actions.bindDifferent('happy_birthday', 'cake', 'cake_appear');
+</script>
 </body>
 </html>
