@@ -20,6 +20,7 @@ html,body{
 /*第一张页面*/
 #page1{
     background-color: #d73b3c;
+    display: none;
 }
 
 /*头部水印*/
@@ -532,4 +533,90 @@ html,body{
         -o-transform: scale(1,1);
         transform: scale(1,1);
     }
+}
+
+/*第二张页面开始*/
+#page2{
+    background: url("../img/p2_bg.png") no-repeat center center;
+}
+
+#page2 > .p2_bg_line{
+    position: fixed;
+    width: 61.25rem;
+    height: 80.3125rem;
+    top: 28.625rem;
+    left: 0;
+    background: url("../img/p2_line.png") no-repeat center center;
+}
+
+#page2 > .p2_bottom_blue{
+    position: fixed;
+    width: 61.25rem;
+    height: 5.375rem;
+    background: url("../img/p2_bottom_blue.png") no-repeat center center;
+    bottom: 0;
+    left: 0;
+}
+
+#page2 > .p2_right_bird{
+    background: url("../img/p2_right_bird.png") no-repeat center center;
+    width: 14.6875rem;
+    height: 21.9375rem;
+    position: fixed;
+    left: 2.0625rem;
+    bottom: 3rem;
+}
+
+#page2 > .p2_blue_present{
+     background: url("../img/p2_blue_present.png") no-repeat center center;
+     width: 4.8125rem;
+     height: 7.8125rem;
+     position: fixed;
+     left: 17.875rem;
+     bottom: 2.625rem;
+ }
+
+#page2 > .p2_blue_present{
+    background: url("../img/p2_blue_present.png") no-repeat center center;
+    width: 4.8125rem;
+    height: 7.8125rem;
+    position: fixed;
+    left: 17.875rem;
+    bottom: 2.625rem;
+}
+
+#page2 > .p2_pink_present{
+    background: url("../img/p2_pink_present.png") no-repeat center center;
+    width: 5.4375rem;
+    height: 9.1875rem;
+    position: fixed;
+    left: 24.8125rem;
+    bottom: 2.6875rem;
+}
+
+#page2 > .p2_yellow_present{
+    background: url("../img/p2_yellow_present.png") no-repeat center center;
+    width: 6.4375rem;
+    height: 13.0625rem;
+    position: fixed;
+    left: 29.375rem;
+    bottom: 2.5rem;
+}
+
+#page2 > .p2_black_present{
+    background: url("../img/p2_black_present.png") no-repeat center center;
+    width: 7.9375rem;
+    height: 8.1875rem;
+    position: fixed;
+    right: 16rem;
+    bottom: 2.875rem;
+}
+
+#page2 > .p2_left_bird{
+    background: url("../img/p2_left_bird.png") no-repeat center center;
+    width: 14.75rem;
+    height: 21.25rem;
+    position: fixed;
+    right: 0.5625rem;
+    bottom: 2.9375rem;
 }
