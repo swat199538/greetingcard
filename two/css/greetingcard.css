@@ -566,6 +566,22 @@ html,body{
     left: 2.0625rem;
     bottom: 3rem;
 }
+/*礼物出现动画*/
+#page2 > .p2_present{
+    -webkit-animation:pap 1s linear;
+    -o-animation:pap 1s linear;
+    animation:pap 1s linear ;
+}
+@keyframes pap {
+    0%{
+        opacity: 0;
+        bottom: 37.6875rem;
+    }
+    100%{
+        opacity: 1;
+        bottom: 2.625rem;
+    }
+}
 
 #page2 > .p2_blue_present{
      background: url("../img/p2_blue_present.png") no-repeat center center;
@@ -574,16 +590,29 @@ html,body{
      position: fixed;
      left: 17.875rem;
      bottom: 2.625rem;
+     animation: pbp 1.2s linear;
  }
-
-#page2 > .p2_blue_present{
-    background: url("../img/p2_blue_present.png") no-repeat center center;
-    width: 4.8125rem;
-    height: 7.8125rem;
-    position: fixed;
-    left: 17.875rem;
-    bottom: 2.625rem;
+@keyframes pbp {
+    0%{
+        opacity: 0;
+        bottom: 37.6875rem;
+        left: 17.5rem;
+    }
+    95%{
+        opacity: 1;
+        bottom: 2.625rem;
+        left: 17.5rem;
+    }
+    96%{
+        bottom: 2.875rem;
+        left: 17.5625rem;
+    }
+    97%{bottom: 2.625rem;left: 17.625rem;}
+    98%{bottom: 2.875rem;left: 17.6875rem;}
+    100%{bottom: 2.625rem;left: 17.875rem}
 }
+
+
 
 #page2 > .p2_pink_present{
     background: url("../img/p2_pink_present.png") no-repeat center center;
@@ -601,7 +630,25 @@ html,body{
     position: fixed;
     left: 29.375rem;
     bottom: 2.5rem;
+    animation: pyp 1.2s linear;
 }
+@keyframes pyp {
+    0%{
+        opacity: 0;
+        transform: rotate(15deg);
+        bottom: 37.6875rem;
+    }
+    99%{
+        opacity: 1;
+        transform: rotate(15deg);
+        bottom: 2.5rem;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
 
 #page2 > .p2_black_present{
     background: url("../img/p2_black_present.png") no-repeat center center;
@@ -610,6 +657,19 @@ html,body{
     position: fixed;
     right: 16rem;
     bottom: 2.875rem;
+    animation: pbps 1.2s linear;
+}
+@keyframes pbps {
+    0%{
+        opacity: 0;
+        bottom: 37.6875rem;
+        transform: rotate(180deg);
+    }
+    100%{
+        opacity: 1;
+        bottom: 2.875rem;
+        transform: rotate(0deg);
+    }
 }
 
 #page2 > .p2_left_bird{
@@ -619,7 +679,9 @@ html,body{
     position: fixed;
     right: 0.5625rem;
     bottom: 2.9375rem;
+    display: none;
 }
+
 
 #page2 > .p2_happy_birthday{
     background: url("../img/p2_happybirthday.png") no-repeat center center;
