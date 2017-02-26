@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    /*font-size: 16px;*/
     border: 0;
 }
 
@@ -619,4 +619,63 @@ html,body{
     position: fixed;
     right: 0.5625rem;
     bottom: 2.9375rem;
+}
+
+#page2 > .p2_happy_birthday{
+    background: url("../img/p2_happybirthday.png") no-repeat center center;
+    width: 54.875rem;
+    height: 18.625rem;
+    position: fixed;
+    right: 3.4375rem;
+    top: 3.3125rem;
+}
+
+#page2 > .p2_sheng{
+    background: url("../img/p2_sheng.png") no-repeat center center;
+    width: 5.125rem;
+    height: 6.3125rem;
+    position: fixed;
+    left: 18.625rem;
+    top: 22.4375rem;
+}
+
+#page2 > .p2_ri{
+    background: url("../img/p2_ri.png") no-repeat center center;
+    width: 5.125rem;
+    height: 6.3125rem;
+    position: fixed;
+    left: 24.9375rem;
+    top: 22.4375rem;
+}
+
+#page2 > .p2_kuai{
+     background: url("../img/p2_kuai.png") no-repeat center center;
+     width: 5.125rem;
+     height: 6.3125rem;
+     position: fixed;
+     left: 31.125rem;
+     top: 22.4375rem;
+ }
+
+#page2 > .p2_le{
+    background: url("../img/p2_le.png") no-repeat center center;
+    width: 5.125rem;
+    height: 6.3125rem;
+    position: fixed;
+    left: 37.5rem;
+    top: 22.4375rem;
+}
+
+#page2 > .p2_back{
+    position: fixed;
+    top: 30.3125rem;
+}
+
+#page2 > .p2_back ul{
+    list-style: none;
+}
+
+#page2 > .p2_back ul li{
+    font-size: 52px;
+    font-family: "Kristen ITC";
 }
