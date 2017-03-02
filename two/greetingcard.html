@@ -69,7 +69,7 @@
         <!--底部蓝底结束-->
 
         <!--右边小鸟开始-->
-        <div class="p2_right_bird"></div>
+        <div id="p2_right_bird" class="p2_right_bird"></div>
         <!--右边小鸟结束-->
 
         <!--蓝色礼物开始-->
@@ -85,11 +85,11 @@
         <!--黄色礼物结束-->
 
         <!--黑色礼物开始-->
-        <div class="p2_black_present "></div>
+        <div id="p2_black_present" class="p2_black_present "></div>
         <!--黑色礼物结束-->
 
         <!--左边小鸟开始-->
-        <div class="p2_left_bird"></div>
+        <div id="p2_left_bird" class="p2_left_bird"></div>
         <!--左边小鸟结束-->
 
         <!--happy birthday开始-->
@@ -106,9 +106,7 @@
         <!--回顾去年开始-->
         <div class="p2_back">
             <ul>
-                <li style="margin-left: 9rem">今今今今今今今今今今今今今今今今</li>
-                <li>今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今</li>
-                <li></li>
+                <li id="font1" style="margin-left: 9rem">今今今今今今今今今今今今今今今今</li>
             </ul>
         </div>
         <!--回顾去年结束-->
@@ -118,6 +116,7 @@
     <!--第二张页面结束-->
 
 <script>
+
     console.log(innerWidth,innerHeight);
     Actions.bindNewAnimation('top_ayaka', 'top_ayaka_appear', 'bottom_ayaka_keep');
     Actions.bindNewAnimation('bottom_ayaka', 'top_ayaka_appear', 'bottom_ayaka_keep');
@@ -126,6 +125,9 @@
     Actions.bindNewAnimation('bottom_balloon', 'bottom_balloon_appear', 'bottom_balloon_keep');
     Actions.bindDifferent('bottom_balloon', 'happy_birthday', 'happy_birthday_appear');
     Actions.bindDifferent('happy_birthday', 'cake', 'cake_appear');
+    Actions.bindDifferent('p2_black_present', 'p2_left_bird', 'p2_left_bird_appear')
+    Actions.bindDifferent('p2_black_present', 'p2_right_bird', 'p2_right_bird_appear')
 </script>
+<script src="js/typewriter.js"></script>
 </body>
 </html>

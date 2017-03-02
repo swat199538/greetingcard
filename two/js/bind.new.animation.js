@@ -9,6 +9,12 @@
     win.Actions = new Object();
 
     /*移除一个绑定一个动作*/
+    /**
+     *
+     * @param id 操作dom的id
+     * @param oldAnimation
+     * @param newAnimation
+     */
     Actions.bindNewAnimation = function (id, oldAnimation, newAnimation) {
         var jqID = '#'+id;
         var element = idElement(id);

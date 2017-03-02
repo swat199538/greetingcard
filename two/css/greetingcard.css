@@ -565,7 +565,35 @@ html,body{
     position: fixed;
     left: 2.0625rem;
     bottom: 3rem;
+    display: none;
 }
+#page2 > .p2_right_bird_appear{
+    display: block;
+    animation: prba 1s linear;
+}
+@keyframes prba {
+    0%{
+        left: -21.9375rem;
+        bottom: 2.9375rem;
+    }
+    25%{
+        left: -15.9375rem;
+        bottom: 1.6875rem;
+    }
+    50%{
+        left:-9.9375rem;
+        bottom: 2.9375rem;;
+    }
+    75%{
+        left:-3.9375rem;
+        bottom: 1.6875rem;
+    }
+    100%{
+        left:2.0625rem;
+        bottom: 2.9375rem;
+    }
+}
+
 /*礼物出现动画*/
 #page2 > .p2_present{
     -webkit-animation:pap 1s linear;
@@ -681,6 +709,34 @@ html,body{
     bottom: 2.9375rem;
     display: none;
 }
+
+#page2> .p2_left_bird_appear{
+    display: block;
+    animation: plba 1s linear;
+}
+@keyframes plba {
+    0%{
+        right: -14.75rem;
+        bottom: 2.9375rem;
+    }
+    25%{
+        right: -11.0625rem;
+        bottom: 1.6875rem;
+    }
+    50%{
+        right: -7.375rem;
+        bottom: 2.9375rem;;
+    }
+    75%{
+        right: -3.6875rem;
+        bottom: 1.6875rem;
+    }
+    100%{
+        right: 0.5625rem;
+        bottom: 2.9375rem;
+    }
+}
+
 
 
 #page2 > .p2_happy_birthday{
