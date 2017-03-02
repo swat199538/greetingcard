@@ -106,7 +106,8 @@
         <!--回顾去年开始-->
         <div class="p2_back">
             <ul>
-                <li id="font1" style="margin-left: 9rem">今今今今今今今今今今今今今今今今</li>
+                <li id="font1" style="margin-left: 9.375rem">今今今今今今今今今今今今今今今</li>
+                <li id="font2">今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今今</li>
             </ul>
         </div>
         <!--回顾去年结束-->
@@ -129,5 +130,10 @@
     Actions.bindDifferent('p2_black_present', 'p2_right_bird', 'p2_right_bird_appear')
 </script>
 <script src="js/typewriter.js"></script>
+<script>
+    var param = TypeWriter.bind_note(['font1', 'font2']);
+    console.log(param);
+    TypeWriter.start(param, 1000);
+</script>
 </body>
 </html>
