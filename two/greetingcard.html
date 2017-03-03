@@ -6,6 +6,7 @@
     <link href="css/greetingcard.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/bind.new.animation.js"></script>
+    <script src="js/typewriter.js"></script>
 </head>
 <body>
     <!--第一张页面开始-->
@@ -119,8 +120,8 @@
     <!--第二张页面结束-->
 
 <script>
-
     console.log(innerWidth,innerHeight);
+    //page1页面的特效
     Actions.bindNewAnimation('top_ayaka', 'top_ayaka_appear', 'bottom_ayaka_keep');
     Actions.bindNewAnimation('bottom_ayaka', 'top_ayaka_appear', 'bottom_ayaka_keep');
     Actions.bindNewAnimation('right_balloon', 'right_balloon_appear', 'right_balloon_keep');
@@ -128,13 +129,12 @@
     Actions.bindNewAnimation('bottom_balloon', 'bottom_balloon_appear', 'bottom_balloon_keep');
     Actions.bindDifferent('bottom_balloon', 'happy_birthday', 'happy_birthday_appear');
     Actions.bindDifferent('happy_birthday', 'cake', 'cake_appear');
-    Actions.bindDifferent('p2_black_present', 'p2_left_bird', 'p2_left_bird_appear')
-    Actions.bindDifferent('p2_black_present', 'p2_right_bird', 'p2_right_bird_appear')
-</script>
-<script src="js/typewriter.js"></script>
-<script>
+
+    //page2页面的特效
+    Actions.bindDifferent('p2_black_present', 'p2_left_bird', 'p2_left_bird_appear');
+    Actions.bindDifferent('p2_black_present', 'p2_right_bird', 'p2_right_bird_appear');
     var param = TypeWriter.bind_note(['font1', 'font2', 'font3', 'font4']);
-    TypeWriter.start(param, 1000);
+    TypeWriter.start(param, 500);
 </script>
 </body>
 </html>
