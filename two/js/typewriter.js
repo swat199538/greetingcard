@@ -8,22 +8,18 @@
 
     //打字机显示文字
     function show_word(param) {
-        console.log(index);
-        console.log(param.length);
         if (index <= param.length-1) {
             var id = '#'+param[index]['id'];
             var old = $(id).html();
             var word = param[index]['content'];
             var new_word = old + word[word_index]
             $(id).html(new_word);
-            console.log(id);
             word_index+=1;
             if (word_index+1 > param[index]['max']){
                 index+=1;
+                word_index = 0;
             }
-            console.log('显示一个字')
         } else {
-            console.log('打字机关闭了');
             clearInterval(interval);
             interval = '';
             index = 0;
